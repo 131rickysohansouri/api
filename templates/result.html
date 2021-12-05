@@ -1,0 +1,11 @@
+<!-- Prediction is sent to the specified url as a POST request -->
+<form class="form-signin" enctype=multipart/form-data action="http://127.0.0.1:8000/predict-result/" method="POST">
+    <input type="text" class="form-control" id="prediction" name="prediction_result" value={{ pred }}>
+</form>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript"></script>
+
+<script>
+    $('form').submit();
+</script>
